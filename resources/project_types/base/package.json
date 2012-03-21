@@ -1,6 +1,6 @@
 {
 	"name": "Builder Base",
-	"project_type_name": "web-builder-base",	
+	"project_type_name": "base",	
 	"project_type": "*",
 	"extensions": [
 		"layout"

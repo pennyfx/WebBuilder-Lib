@@ -1,9 +1,9 @@
 {
 	"name": "Mozilla Node JS extensions",
-	"project_type_name": "moz-node-js",	
+	"project_type_name": "moz-app",	
 	"project_type": "nodejs",
 	"extensions": [
-		"spash_page"
+		"splash_page"
 	],
-	"depends": "web-builder-base"
+	"depends": "base"
 }

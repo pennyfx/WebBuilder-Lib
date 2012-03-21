@@ -1,7 +1,7 @@
 var Application = require('builder/application'),
 	Class = require('shipyard/class/Class');
 	
-module.exports.getApplication = function(){
+module.exports.getApplication = function(bootStrapExtension){
 	
 	var Root = new Class(require('../../resources/controls/root/root.js'));		
 	return new Application({
@@ -19,7 +19,8 @@ module.exports.getApplication = function(){
 				{ path:'../../resources/controls' , sync: 'file' }
 			]
 		},
-		root: root
+		root: root,
+		bootstrapExtension: bootStrapExtension
 	});
 }
 
