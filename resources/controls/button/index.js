@@ -25,7 +25,8 @@ module.exports = {
 		}
 	},
 	initialize: function(unsafeOptions){
-		console.log('button init');
+		
+		console.log('button init---');
 		this.parent(this.options, unsafeOptions);
 		this.addEvent('click', function(){
 			console.log('safe button click', arguments, this);
