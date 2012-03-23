@@ -52,7 +52,7 @@ module.exports = {
 	
 	'Application.unloadCollection() should upload collection/project_type': function(beforeExit, assert){
 		var bootStrapExtension = "layout";
-		var app = helper.getApplication(bootStrapExtension);
+		var app = helper.getApplication(bootStrapExtension);		
 		assert.eql(1, Object.keys(app.activeExtensions).length);
 		app.unloadCollection();
 		assert.eql(0, Object.keys(app.activeExtensions).length);
@@ -63,6 +63,7 @@ module.exports = {
 		
 		var app = helper.getApplication();
 		app.loadCollection("base");
+		assert.eql("base", app.getCurrentCollection());
 		assert.eql(1, Object.keys(app.activeExtensions).length);
 		assert.isDefined(app.activeExtensions['layout']);
 		
@@ -72,6 +73,7 @@ module.exports = {
 		
 		var app = helper.getApplication();
 		app.loadCollection("moz-app");
+		assert.eql("moz-app", app.getCurrentCollection());
 		assert.eql(2, Object.keys(app.activeExtensions).length);
 		assert.isDefined(app.activeExtensions['layout']);
 		
