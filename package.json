@@ -1,5 +1,5 @@
 {
-	"name": "web-builder",
+	"name": "idea-builder-framework",
 	"description": "Offline/Online IDE",
     "version": "0.0.1",
 	"main": "./lib/index.js",

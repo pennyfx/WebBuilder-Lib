@@ -1,6 +1,7 @@
 var Application = require('../lib/application'),
-	helper = require('./utils/helpers'),	
-	Class = require('shipyard/class/Class');
+	helper = require('./utils/helpers'),
+	Class = require('shipyard/class/Class'),
+	path = require('path');
 
 helper.bootStrapForNode();
 
@@ -26,20 +27,20 @@ module.exports = {
 	},
 	
 	'Application should load resources': function(beforeExit, assert){
-					
+		
 		var app = new Application({
 			resources: {
 				extensions: [					
-					{ path:'../resources/extensions' , sync: 'file' }
+					{ path: path.join(__dirname, './resources/extensions') , sync: 'file' }
 				],
 				collections: [					
-					{ path:'../resources/project_types' , sync: 'file' }
+					{ path:path.join(__dirname, './resources/project_types') , sync: 'file' }
 				],
 				skins: [					
-					{ path:'../resources/skins' , sync: 'file' }
+					{ path:path.join(__dirname, './resources/skins') , sync: 'file' }
 				],
 				controls: [					
-					{ path:'../resources/controls' , sync: 'file' }
+					{ path:path.join(__dirname, './resources/controls') , sync: 'file' }
 				]
 			},
 			root: {}
