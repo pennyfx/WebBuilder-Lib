@@ -1,4 +1,4 @@
-var Application = require('../lib/application'),
+var Application = require('builder-lib/application'),
 	helper = require('./utils/helpers'),
 	Class = require('shipyard/class/Class'),
 	path = require('path');

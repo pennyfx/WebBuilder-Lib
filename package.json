@@ -1,8 +1,8 @@
 {
-	"name": "idea-builder-framework",
-	"description": "Offline/Online IDE",
+	"name": "web-builder-lib",
+	"description": "Library to support WebBuilder IDE",
     "version": "0.0.1",
-	"main": "./lib/index.js",
-    "dependencies": {        
+	"main": "./lib/builder-lib/index.js",
+    "dependencies": {
     }
 }

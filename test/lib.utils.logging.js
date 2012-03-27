@@ -1,4 +1,4 @@
-var logging = require('../lib/utils/logging.js'),
+var logging = require('builder-lib/utils/logging.js'),
 	helper = require('./utils/helpers');	
 
 helper.bootStrapForNode();

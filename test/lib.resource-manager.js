@@ -1,5 +1,5 @@
 var Class = require('shipyard/class/Class'),
-	ResourceManager = require('../lib/resource-manager');	
+	ResourceManager = require('builder-lib/resource-manager');	
 
 module.exports = {
 	'Resource Manager should load read directory of resources': function(beforeExit, assert){
