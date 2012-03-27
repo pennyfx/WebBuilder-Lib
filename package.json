@@ -2,6 +2,7 @@
 	"name": "web-builder",
 	"description": "Offline/Online IDE",
     "version": "0.0.1",
+	"main": "./lib/index.js",
     "dependencies": {        
     }
 }

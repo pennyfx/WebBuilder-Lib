@@ -1,4 +1,4 @@
-var AppRequire = require('builder/app-require'),
+var AppRequire = require('../lib/app-require'),
 	helper = require('./utils/helpers'),
 	Class = require('shipyard/class/Class');
 

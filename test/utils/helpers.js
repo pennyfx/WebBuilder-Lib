@@ -1,30 +1,30 @@
-var Application = require('builder/application'),
+var Application = require('../../lib/application'),
 	Class = require('shipyard/class/Class');
 	
 module.exports.getApplication = function(bootStrapExtension){
 	
-	var Root = new Class(require('../../resources/controls/root/root.js'));		
+	
 	return new Application({
 		resources: {
 			extensions: [					
-				{ path:'../../resources/extensions' , sync: 'file' }
+				{ path:'../resources/extensions' , sync: 'file' }
 			],
 			collections: [					
-				{ path:'../../resources/project_types' , sync: 'file' }
+				{ path:'../resources/project_types' , sync: 'file' }
 			],
 			skins: [					
-				{ path:'../../resources/skins' , sync: 'file' }
+				{ path:'../resources/skins' , sync: 'file' }
 			],
 			controls: [					
-				{ path:'../../resources/controls' , sync: 'file' }
+				{ path:'../resources/controls' , sync: 'file' }
 			]
 		},
-		root: root,
+		root: {},
 		bootstrapExtension: bootStrapExtension
 	});
 }
 
 module.exports.bootStrapForNode = function(){
-	require('../../lib/builder/types/Natives').install();
+	require('../../lib/types/Natives').install();
 	window = {};
 }
