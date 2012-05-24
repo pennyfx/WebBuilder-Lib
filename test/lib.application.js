@@ -1,9 +1,6 @@
-var Application = require('builder-lib/application'),
-	helper = require('./utils/helpers'),
-	Class = require('shipyard/class/Class'),
+var helper = require('./utils/helpers').bootStrapForNode(),
+	Application = require('builder-lib/application'),
 	path = require('path');
-
-helper.bootStrapForNode();
 
 module.exports = {
 	

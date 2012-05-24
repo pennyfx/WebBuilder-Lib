@@ -1,8 +1,5 @@
-var AppRequire = require('builder-lib/app-require'),
-	helper = require('./utils/helpers'),
-	Class = require('shipyard/class/Class');
-
-helper.bootStrapForNode();
+var	helper = require('./utils/helpers').bootStrapForNode();
+var AppRequire = require('builder-lib/app-require');
 
 module.exports = {
 	'Should Load Control': function(beforeExit, assert){

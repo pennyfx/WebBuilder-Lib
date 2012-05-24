@@ -19,7 +19,7 @@ module.exports = {
 		b1.click = function(e){
 			console.log('click click', this, e);
 		}
-		var root = app.controlTree.findControl('root');
+		var root = app.controlTree.getControl('root');
 		//root.append(b1);
 		
 	},

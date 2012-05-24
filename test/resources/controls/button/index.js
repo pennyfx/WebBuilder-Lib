@@ -9,10 +9,10 @@ module.exports = {
 	Accessors: {
 		text: {
 			get: function(){				
-				return this.element.node.textContent;
+				return this.element.textContent;
 			},
 			set: function(val){				
-				this.element.node.textContent = val;				
+				this.element.textContent = val;				
 				return this;
 			}
 		}
@@ -24,12 +24,12 @@ module.exports = {
 			'class': 'button',
 		}
 	},
-	initialize: function(unsafeOptions){
-		
+	initialize: function(unsafeOptions){		
 		console.log('button init---');
 		this.parent(this.options, unsafeOptions);
-		this.addEvent('click', function(){
+		this.addListener('click', function(){
 			console.log('safe button click', arguments, this);
-		});		
+		});
+		console.log('button init--- complete');
 	}
 }

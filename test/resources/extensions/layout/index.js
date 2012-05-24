@@ -10,7 +10,7 @@ module.exports = {
 	name: 'layout',
 	onLoad: function(){
 		
-		var root = app.controlTree.findControl('root');
+		var root = app.controlTree.getControl('root');
 		
 	},
 	onUnload: function(){

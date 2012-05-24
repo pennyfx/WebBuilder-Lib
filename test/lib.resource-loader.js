@@ -1,8 +1,6 @@
-var Class = require('shipyard/class/Class'),
+var	helper = require('./utils/helpers').bootStrapForNode(),
 	Loader = require('builder-lib/resource-loader'),
 	path = require('path');
-
-require('./utils/helpers').bootStrapForNode();
 
 module.exports = {
 	'Should load a single file resource from file system': function(beforeExit, assert){

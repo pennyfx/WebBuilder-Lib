@@ -1,10 +1,10 @@
-var Application = require('../../lib/application'),
-	Class = require('shipyard/class/Class'),
-	path = require('path');
+
 	
 module.exports.getApplication = function(bootStrapExtension){
-	
-	
+
+	var Application = require('builder-lib/application'),
+		path = require('path');
+
 	return new Application({
 		resources: {
 			extensions: [					
@@ -26,6 +26,9 @@ module.exports.getApplication = function(bootStrapExtension){
 }
 
 module.exports.bootStrapForNode = function(){
-	require('../../lib/types/Natives').install();
+	require('../../scripts/mootools.js');
+	console.log("loaded moo.");
+	require('builder-lib/types/Natives').install();
 	window = {};
+	return this;
 }
